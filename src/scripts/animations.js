@@ -31,7 +31,7 @@ const contactForm = document.querySelector(".contact-form");
 
 contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
-  alert("Thank you for your interest in BREWÉ! This is a demo form.");
+  alert("Thank you for your interest in BREWE! This is a demo form.");
   contactForm.reset();
 });
 

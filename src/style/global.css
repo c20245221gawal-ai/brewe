@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 :root {
-  --espresso: #241711;
-  --brown: #3b281f;
-  --cream: #f8f5ef;
-  --caramel: #bd8957;
-  --muted: #8b7c70;
+  --espresso: #111111;
+  --brown: #333333;
+  --cream: #ffffff;
+  --caramel: #111111;
+  --muted: #666666;
   --white: #ffffff;
 }
 
@@ -50,7 +50,7 @@ button, input, textarea {
   justify-content: space-between;
   align-items: center;
   background: var(--cream);
-  border-bottom: 1px solid #e9e1d6;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .logo, .footer-logo {
@@ -70,6 +70,14 @@ button, input, textarea {
   width: 52px;
   height: 52px;
   object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo-name, .footer-logo-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
 .logo > span > span, .footer-logo > span > span {
@@ -88,7 +96,7 @@ button, input, textarea {
 }
 
 .navigation a:hover {
-  color: var(--caramel);
+  color: #777777;
 }
 
 .nav-button, .primary-button {
@@ -102,7 +110,7 @@ button, input, textarea {
 }
 
 .nav-button:hover, .primary-button:hover {
-  background: var(--caramel);
+  background: #333333;
 }
 
 /* GENERAL */
@@ -141,7 +149,7 @@ button, input, textarea {
 .hero h1 span, .about h2 span,
 .section-heading h2 span, .contact h2 span {
   display: block;
-  color: var(--caramel);
+  color: inherit;
 }
 
 .hero-description {
@@ -169,7 +177,7 @@ button, input, textarea {
   display: flex;
   justify-content: space-between;
   max-width: 430px;
-  border-top: 1px solid #dfd5c8;
+  border-top: 1px solid #dddddd;
   margin-top: 65px;
   padding-top: 18px;
   font-size: 9px;
@@ -183,8 +191,9 @@ button, input, textarea {
 
 .hero-visual img {
   width: 100%;
-  height: 490px;
+  height: auto;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 
@@ -194,14 +203,14 @@ button, input, textarea {
   left: 0;
   right: 0;
   padding: 20px 25px;
-  background: rgba(36, 23, 17, 0.88);
+  background: rgba(0, 0, 0, 0.84);
   color: white;
 }
 
 .floating-label span {
   display: block;
   font-size: 9px;
-  color: var(--caramel);
+  color: var(--white);
   letter-spacing: 2px;
   margin-bottom: 8px;
 }
@@ -215,7 +224,7 @@ button, input, textarea {
 /* ABOUT */
 
 .about {
-  background: #eee7dc;
+  background: #f7f7f7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 85px;
@@ -244,7 +253,7 @@ button, input, textarea {
   display: inline-block;
   margin-top: 20px;
   font-size: 12px;
-  border-bottom: 1px solid var(--espresso);
+  border-bottom: 1px solid #111111;
   padding-bottom: 7px;
 }
 
@@ -286,7 +295,7 @@ button, input, textarea {
 .product-image {
   position: relative;
   overflow: hidden;
-  background: #e8ded1;
+  background: #f2f2f2;
 }
 
 .product-image img {
@@ -304,7 +313,7 @@ button, input, textarea {
   position: absolute;
   top: 15px;
   left: 15px;
-  background: var(--cream);
+  background: var(--white);
   padding: 8px 12px;
   font-size: 10px;
 }
@@ -332,7 +341,7 @@ button, input, textarea {
 
 .product-info strong {
   font-size: 13px;
-  color: var(--caramel);
+  color: var(--espresso);
   white-space: nowrap;
 }
 
@@ -354,18 +363,18 @@ button, input, textarea {
   flex-direction: column;
   justify-content: space-between;
   padding: 38px;
-  background: #eee7dc;
-  border-top: 3px solid transparent;
+  background: #f7f7f7;
+  border-top: 2px solid #e5e5e5;
   transition: border-color 0.3s, transform 0.3s;
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
-  border-color: var(--caramel);
+  border-color: #111111;
 }
 
 .skill-card span {
-  color: var(--caramel);
+  color: #666666;
   font-size: 10px;
   letter-spacing: 2px;
 }
@@ -395,7 +404,7 @@ button, input, textarea {
 }
 
 .services .section-heading > p {
-  color: #c7b8a8;
+  color: #bdbdbd;
 }
 
 .services-grid {
@@ -407,21 +416,21 @@ button, input, textarea {
 .service-card {
   min-height: 220px;
   padding: 32px;
-  border: 1px solid #59483d;
+  border: 1px solid #333333;
   background: rgba(255, 255, 255, 0.02);
   transition: border-color 0.3s, transform 0.3s, background 0.3s;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
-  border-color: var(--caramel);
-  background: rgba(189, 137, 87, 0.06);
+  border-color: #888888;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .service-number {
   display: block;
   margin-bottom: 35px;
-  color: var(--caramel);
+  color: #bdbdbd;
   font-size: 11px;
   letter-spacing: 2px;
 }
@@ -434,7 +443,7 @@ button, input, textarea {
 }
 
 .service-card p {
-  color: #c7b8a8;
+  color: #bdbdbd;
   font-size: 12px;
   line-height: 1.9;
 }
@@ -442,7 +451,7 @@ button, input, textarea {
 /* CONTACT */
 
 .contact {
-  background: #eee7dc;
+  background: #f7f7f7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 90px;
@@ -468,7 +477,7 @@ button, input, textarea {
 }
 
 .contact-details span {
-  color: var(--caramel);
+  color: #666666;
   font-size: 10px;
   letter-spacing: 2px;
 }
@@ -491,7 +500,7 @@ button, input, textarea {
 .contact-form input, .contact-form textarea {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #cfc2b3;
+  border-bottom: 1px solid #cccccc;
   padding: 14px 0;
   margin-bottom: 28px;
   outline: none;
@@ -504,7 +513,7 @@ button, input, textarea {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-  border-color: var(--caramel);
+  border-color: #111111;
 }
 
 .contact-form button {
@@ -540,7 +549,7 @@ button, input, textarea {
 .footer-content > div:first-child p {
   margin-top: 10px;
   font-size: 12px;
-  color: #c7b8a8;
+  color: #bdbdbd;
 }
 
 .footer-links {
@@ -551,21 +560,21 @@ button, input, textarea {
 
 .footer-links a {
   font-size: 11px;
-  color: #d4c8bb;
+  color: #cccccc;
 }
 
 .footer-links a:hover {
-  color: var(--caramel);
+  color: var(--white);
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  border-top: 1px solid #59483d;
+  border-top: 1px solid #333333;
   padding-top: 22px;
   margin-top: 50px;
-  color: #b9a99b;
+  color: #999999;
   font-size: 10px;
 }
 
@@ -655,7 +664,7 @@ button, input, textarea {
   }
 
   .hero-visual img {
-    height: 370px;
+    height: auto;
   }
 
   .hero-note {
@@ -709,9 +718,6 @@ button, input, textarea {
     gap: 18px;
   }
 
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* ACCESSIBILITY */
