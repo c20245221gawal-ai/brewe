@@ -73,13 +73,6 @@ button, input, textarea {
   border-radius: 50%;
 }
 
-.logo-name, .footer-logo-name {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
 .logo > span > span, .footer-logo > span > span {
   color: var(--caramel);
 }
@@ -690,10 +683,6 @@ button, input, textarea {
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-grid {
     grid-template-columns: 1fr;
   }
 
