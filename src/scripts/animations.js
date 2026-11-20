@@ -1,4 +1,3 @@
-
 document.documentElement.classList.add("js-motion");
 
 const revealElements = document.querySelectorAll(".reveal");
@@ -35,3 +34,4 @@ contactForm?.addEventListener("submit", (event) => {
   alert("Thank you for your interest in BREWÉ! This is a demo form.");
   contactForm.reset();
 });
+
